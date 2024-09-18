@@ -97,7 +97,7 @@ const Reviews = () => {
                   </CardHeader>
 
                   <CardDescription className="text-lg -skew-x-3 text-slate-100">
-                    "{r.review}"
+                    {r.review}
                   </CardDescription>
                 </Card>
               </SwiperSlide>
