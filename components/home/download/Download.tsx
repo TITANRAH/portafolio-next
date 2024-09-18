@@ -91,7 +91,6 @@ export default function Download() {
 
   getData(infoData, "titulos");
 
-  // console.log('entro al console',getData(qualificationData, 'experience' ));
 
   return (
     <section className=" py-12 xl:py-24 xl:max-w-[1380px]  " id="download">
