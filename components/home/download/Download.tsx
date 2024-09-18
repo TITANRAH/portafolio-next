@@ -9,7 +9,7 @@ import {
 
 import Image from "next/image";
 
-import titandev from "@/public/img/titandev2.jpg";
+import titandev from "../../../public/img/titandev2.jpg";
 import SectionHeader from "@/components/helper/SectionHeader";
 import Link from "next/link";
 
