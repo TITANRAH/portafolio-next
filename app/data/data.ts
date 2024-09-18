@@ -6,7 +6,7 @@ export const BaseInfo = {
     position: "Full Stack Web Developer",
     description:
       "Me gusta trabajar con el código de cualquier framework y puedo adaptarme fácilmente, pero mis frameworks favoritos hasta ahora son Next js para front y Nest js para back.",
-    profilePic: "/images/hero.jpg",
+    profilePic: "/img/hero.jpg",
   };
   
   export const aboutInfo = {
