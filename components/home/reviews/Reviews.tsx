@@ -81,9 +81,8 @@ const Reviews = () => {
                         className="rounded-full"
                         src={r.avatar}
                         alt="avatar"
-                        width={70}
                         height={70}
-                        priority
+                        width={70}
                       />
                       {/* name  */}
                       <div className="flex flex-col text-slate-100">
