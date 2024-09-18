@@ -2,13 +2,9 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
-  User2,
-  MailIcon,
-  HomeIcon,
-  PhoneCall,
+ 
   GraduationCap,
-  Calendar,
-  Briefcase,
+ 
 } from "lucide-react";
 
 import Image from "next/image";
