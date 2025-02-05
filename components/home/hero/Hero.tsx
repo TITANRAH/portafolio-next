@@ -4,9 +4,9 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="w-full pt-20 pb-10 md:pt-[25vh] overflow-x-hidden relative pt-40 md:pt-0 md:mb-10">
-      <div className="flex justify-center flex-col w-4/5 h-full m-auto  text-white">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+    <div className="w-full pt-16 mb-10   md:mb-10 h-[80vh] md:h-[90vh]">
+      <div className="flex justify-center flex-col w-4/5 h-full  m-auto  text-white">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           {/* content */}
           <div className="">
             <h1 className="text-2xl md:text-3xl lg:text-4xl mb-5 text-gray-300 font-semibold">
@@ -23,13 +23,13 @@ function Hero() {
 
           {/* image */}
 
-          <div className="mx-auto lg:block rounded-[3rem] md:w-20 xl:w-96  h-40 w-40">
+          <div className="mx-auto lg:block rounded-[3rem]  h-64 w-64 md:w-20 xl:w-96 mt-5 ">
             <Image
               src={BaseInfo.profilePic}
               alt={BaseInfo.name}
               width={300}
               height={200}
-              className="object-cover object-top rounded-full w-full h-40 w-40 md:h-96 md:w-96 "
+              className="object-cover object-top rounded-full h-64 w-64 md:h-96 md:w-96 "
             />
           </div>
 
