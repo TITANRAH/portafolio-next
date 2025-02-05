@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import { Send } from "lucide-react";
+import { Loader2, Send } from "lucide-react";
 import { z } from "zod";
 import {
   Form,
@@ -20,8 +20,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { handleSendEmail } from "@/app/actions/handleSendEmail";
 import Image from "next/image";
 import SectionHeader from "@/components/helper/SectionHeader";
+import { useState } from "react";
 
 export default function CreateUserForm() {
+  const [loading, setLoading] = useState(false);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -34,15 +37,19 @@ export default function CreateUserForm() {
   const onSubmitCreate = async (values: z.infer<typeof formSchema>) => {
     // console.log('click');
 
+    setLoading(true);
+
     console.log(values);
     const resp = await handleSendEmail(values);
 
     if (!resp.ok) {
       toast.error("No se envió el correo");
       form.reset();
+      setLoading(false);
     } else {
       toast.success("Correo enviado");
       form.reset();
+      setLoading(false);
     }
   };
 
@@ -50,19 +57,19 @@ export default function CreateUserForm() {
     <div className="flex flex-col items-center justify-center" id="contacto">
       <SectionHeader>Contacto</SectionHeader>
 
-      <div className="flex flex-col md:flex-row items-center justify-center  mt-16 ">
+      <div className="flex flex-co w-full md:flex-row items-center justify-between  ">
         <Image
           src={"/img/titan-dev.png"}
           alt="titandev"
           width={550}
           height={550}
-          className="hidden md:block"
+          className="hidden md:block w-full"
         />
 
-        <div className="">
+        <div className="w-full">
           <Form {...form}>
             <form
-              className="flex flex-col gap-4 w-80"
+              className="flex flex-col gap-4  w-full p-10"
               onSubmit={form.handleSubmit(onSubmitCreate)}
             >
               <div>
@@ -135,8 +142,14 @@ export default function CreateUserForm() {
                 className=" bg-lime-600  hover:bg-lime-700 p-2 mt-4 text-white rounded"
                 type="submit"
               >
-                <Send type="submit" className="mr-2" size={20} />
-                ENVIAR MENSAJE
+                {loading ? (
+                  <Loader2 className="animate-spin" />
+                ) : (
+                  <>
+                    <Send type="submit" className="mr-2" size={20} />
+                    <span>ENVIAR MENSAJE</span>
+                  </>
+                )}
               </Button>
             </form>
           </Form>

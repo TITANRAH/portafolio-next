@@ -4,8 +4,8 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="w-full pt-[4vh] md:pt-[12vh] h-screen  overflow-x-hidden relative">
-      <div className="flex justify-center flex-col w-4/5 h-full mx-auto text-white">
+    <div className="w-full pt-[4vh] md:pt-[25vh] overflow-x-hidden relative pt-40 md:pt-0 md:mb-10">
+      <div className="flex justify-center flex-col w-4/5 h-full m-auto  text-white">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           {/* content */}
           <div className="">
@@ -29,7 +29,7 @@ function Hero() {
               alt={BaseInfo.name}
               width={300}
               height={200}
-              className="object-cover object-top rounded-[3rem] w-full h-full"
+              className="object-cover object-top rounded-full w-full h-56 w-56 md:h-96 md:w-96 "
             />
           </div>
 

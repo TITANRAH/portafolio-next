@@ -38,8 +38,8 @@ export const BaseInfo = {
     },
     {
       id: "3",
-      title: "Actualmente trabajo en Medismart",
-      description: "Estoy enormemente agradecido de esta empresa que me dio la oportunidad de desarollarme en este hermoso mundo que es el desarollo, siempre he dicho que pongo mucha pasión ya que hasta fuera de horario estoy codificando, es un gusto y un placer que además me da para vivir ,pase de desarrollador a lider técnico y en eso estoy actualmente, no se hasta cuando dure este viaje pero lo disfrutaré hasta que termine.",
+      title: "Trabaje 3 años en Medismart",
+      description: "Estoy enormemente agradecido de esta empresa que me dio la oportunidad de desarollarme en este hermoso mundo que es el desarollo, siempre he dicho que pongo mucha pasión ya que hasta fuera de horario estoy codificando, es un gusto y un placer que además me da para vivir ,pase de desarrollador a lider técnico , actualmente ya no trabajo en esta empresa",
       category: "years",
       images: ["/img_about/medismart/medismart.png"],
       
@@ -121,47 +121,55 @@ export const BaseInfo = {
       images: ["/img_about/studies/iplacex.png"],
       
     },
+    {
+      id: "14",
+      title: "Actualmente estoy sacando un Postgrado en IA CenteIA",
+      description: "Estoy sacando un Postgrado en Inteligencia Artificial, prompts enginer, chatbox, automatizaciones, modelos, LLMS, etc.",
+      category: "studies",
+      images: ["/img_about/studies/centeia.png"],
+      
+    },
    
   
 
     // lead projet
     {
-      id: "13",
+      id: "15",
       title: "Ecosistema de telemedicina para ITAU",
       description: "Me toco liderar al equipo Front con el que desarrollamos este ecosistema de telemedicina para Itau, con un backend ya desarrollado, usamos la tecnología Next js para realizarlo, Tailwind CSS para estilos, ShadCn como biblioteca de componentes para estilos NextAuth para la autenticación, React Hook Form para formularios, Zod para validar, entre otras.\n El sistema actualmente se encuentra en producción.",
       category: "lead-project",
       images: ["/img_about/scotiabank-cardif/cardif.png", "/img_about/scotiabank-cardif/cardif-2.png", "/img_about/scotiabank-cardif/cardif-3.png"],
     },
     {
-      id: "14",
+      id: "16",
       title: "Smartcheck 2.0",
       description: "Sistema externo que expone Apis de una empresa canadiense dedicada a la telemetría médica, me toco liderar el desarollo del front que consume estas Apis y concluye en una medición de distintos tipos de datos entregados mediante la cámara, donde el usuario enciende la cámara y el sistema realiza la medición del usuario, a la vez guardamos estos datos en una bd no relacional (mongoDB) y liberamos informes para los usuarios, las tecnologías usadas son Nextjs, mongoDb, Prisma, React Hook Form, Zod, Shadcn, TailwindCSS.",
       category: "lead-project",
       images: ["/img_about/smartcheck/smartcheck.png", "/img_about/smartcheck/smartcheck-2.png"],
     },
     {
-      id: "15",
+      id: "17",
       title: "Encuesta NPS",
       description: "La empresa necesitaba un sistema de encuestas para México, Colombia y Chile, encuestas de satisfacción respecto al servicio de telemedicina entregado, utilicé Nextjs, Shadcn, TailwindCSS, por el lado del back el desarrollador de backend utilizó una bd relacional SQL",
       category: "lead-project",
       images: ["/img_about/encuesta-nps/encuesta.png"],
     },
     {
-      id: "16",
+      id: "18",
       title: "Ecosistema de telemedicina para BETTERFLY",
       description: "Me toco liderar al equipo Front con el que desarrollamos este ecosistema de telemedicina para Betterfly, con un backend ya desarrollado, usamos la tecnología Next js para realizarlo, Tailwind CSS para estilos, ShadCn como biblioteca de componentes para estilos, NextAuth para la autenticación, React Hook Form para formularios, Zod para validar, entre otras. El sistema actualmente se encuentra en producción.",
       category: "lead-project",
       images: ["/img_about/betterfly/bet.png"],
     },
     {
-      id: "17",
+      id: "19",
       title: "Metrics",
       description: "Metrics es un sistema interno en el cual se disponibilizan datos cargados desde POWER-BI, tanto para la empresa como para clientes que necesiten conocer las estadísticas de sus sistemas independientes que a su vez son instancias del sistema de telemedicina corporativo de Medismart.",
       category: "lead-project",
       images: ["/img_about/metrics/metrics.png"],
     },
     {
-      id: "18",
+      id: "20",
       title: "App movil Medismart",
       description: "Primero partimos junto a un Senior trabajando en Ionic con Angular realizando esta app movil, luego nos pasamos a Flutter y reescribimos la app, quede por un tiempo solo desarrollando en esta app y luego se unió otro compañero para formar equipo. Actualmente esta app no esta en producción pero si tuve la oportunidad de poder desarrollar en este gran framework que es Flutter, cabe mencionar que este framework permite desarollar para iOS y Android ",
       category: "lead-project",

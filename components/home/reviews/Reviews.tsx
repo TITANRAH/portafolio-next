@@ -9,6 +9,7 @@ import diego from "@/public/img/diego.jpeg";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SectionHeader from "@/components/helper/SectionHeader";
+import sergio_pola from "@/public/img/sergio_pola.png"
 
 interface Reviews {
   avatar: StaticImageData;
@@ -47,6 +48,15 @@ const reviewsData: Reviews[] = [
     review:
       "Estamos trabajando un proyecto que necesito para mi establecimiento mecánico y hasta ahora ha sido muy paciente y comprometido con lo que necesito, recomendable y un gusto trabajar con el.",
   },
+  {
+    avatar: sergio_pola,
+    name: "Sergio Pola",
+    job: "Chief Software Architect",
+    contact_number: "+56 9 9078 4464",
+    email: "sergio.pola@triplea.cl",
+    review:
+      "Un gusto trabajar con Sergio Miranda, un desarrollador creativo, responsable, metódico y técnico, siempre buscando la excelencia en el desarollo",
+  },
 ];
 
 const Reviews = () => {
@@ -55,6 +65,7 @@ const Reviews = () => {
       <SectionHeader>Recomendaciones</SectionHeader>
       <div className="px-5 mt-20">
         <Swiper
+        autoplay={true}
           slidesPerView={1}
           breakpoints={{
             // cuantos se veran segun medida
@@ -67,13 +78,14 @@ const Reviews = () => {
             clickable: true,
             bulletClass: "swiper-pagination-bullet",
             bulletActiveClass: "swiper-pagination-bullet-active",
+            currentClass: "mt-30"
           }}
           className="min-h-[350px]"
         >
           {reviewsData.map((r, index) => {
             return (
               <SwiperSlide key={index}>
-                <Card className="bg-tertiary cursor-pointer border-lime-400 p-8 min-h-[300px]">
+                <Card className="bg-tertiary cursor-pointer border-lime-400 p-8 max-h-[300px] min-h-[300px]">
                   <CardHeader className="p-0 mb-10">
                     <div className="flex items-center gap-x-4">
                       {/* imageavatar */}
@@ -96,7 +108,7 @@ const Reviews = () => {
                     </div>
                   </CardHeader>
 
-                  <CardDescription className="text-lg -skew-x-3 text-slate-100">
+                  <CardDescription className="md:text-lg text-slate-100">
                     {r.review}
                   </CardDescription>
                 </Card>

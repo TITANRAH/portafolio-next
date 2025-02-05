@@ -93,25 +93,25 @@ export default function Download() {
 
 
   return (
-    <section className=" py-12 xl:py-24 xl:max-w-[1380px]  " id="download">
+    <section className="py-10 md:py-0 xl:py-24 xl:max-w-[1380px] h-[50rem] md:h-[48rem] " id="download">
       <div className="container mx-auto">
         <SectionHeader>Download</SectionHeader>
       </div>
-      <div className="flex flex-row justify-between xl:flex-row mt-20 w-[95%] md:w-2/3 m-auto gap-5">
+      <div className="flex flex-row  xl:flex-row mt-20 w-[95%] md:w-full">
         {/* image */}
-        <div className="hidden xl:flex flex-1 justify-center items-center">
+        <div className="hidden xl:flex flex-1 h-full justify-center items-center">
           <Image
             src={titandev}
             width={1000}
             height={1000}
             alt="titandev2"
-            className="object-cover object-center h-[500px] w-96 rounded-xl"
+            className="object-cover object-center h-96 w-96 rounded-full "
           />
         </div>
 
-        <div className="flex w-full justify-center xl:flex-1 text-white">
-          <Tabs defaultValue="titulos">
-            <TabsList className="w-full grid grid-cols-2 xl:grid-cols-2 xl:max-w-[520px] xl:border border-lime-500 border-2 bg-slate-950">
+        <div className="flex w-[90%] ml-6 m-auto md:w-full justify-center xl:flex-1 text-white">
+          <Tabs defaultValue="titulos" className="w-full flex items-center flex-col ">
+            <TabsList className="md:w-full grid grid-cols-2 xl:grid-cols-2 xl:max-w-[520px] fade-in xl:border border-lime-500 border-2 bg-slate-950">
               <TabsTrigger className="w-full text-lime-400 " value="titulos" inlist={infoData} >
                 Descarga títulos
               </TabsTrigger>
@@ -129,7 +129,7 @@ export default function Download() {
               <TabsContent value="titulos">
                 <div className="text-center xl:text-left">
                   {/* icons */}
-                  <div className="grid xl:grid-cols-1 gap-4 mb-12 mt-10">
+                  <div className="grid xl:grid-cols-1 gap-4 mb-12 mt-10 fade-in">
                     {infoData.map((i, index) => {
                       return (
                         <Link
@@ -153,7 +153,7 @@ export default function Download() {
               </TabsContent>
               <TabsContent value="certificados">
                 {/* icons */}
-                <div className="grid xl:grid-cols-1 gap-4 mb-12 mt-10">
+                <div className="grid xl:grid-cols-1 gap-4 mb-12 mt-10 fade-in">
                   {certificados.map((i, index) => {
                     return (
                       <Link
